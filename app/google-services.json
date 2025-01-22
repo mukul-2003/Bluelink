@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "982383710010",
+    "project_id": "bluetoothchat-e9226",
+    "storage_bucket": "bluetoothchat-e9226.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982383710010:android:81698f48b373c8573b0a03",
+        "android_client_info": {
+          "package_name": "com.plcoding.bluetoothchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUSNpc1fA_oTNROLL1P5esxdQGyrAAwTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
