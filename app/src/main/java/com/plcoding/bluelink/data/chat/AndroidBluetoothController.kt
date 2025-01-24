@@ -71,16 +71,22 @@ class AndroidBluetoothController(
     private var currentServerSocket: BluetoothServerSocket? = null
     private var currentClientSocket: BluetoothSocket? = null
 
+    private var isFoundDeviceReceiverRegistered = false
+    private var isBluetoothStateReceiverRegistered = false
+
     init {
         updatePairedDevices()
-        context.registerReceiver(
-            bluetoothStateReceiver,
-            IntentFilter().apply {
-                addAction(BluetoothAdapter.ACTION_CONNECTION_STATE_CHANGED)
-                addAction(BluetoothDevice.ACTION_ACL_CONNECTED)
-                addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED)
-            }
-        )
+        if (!isBluetoothStateReceiverRegistered) {
+            context.registerReceiver(
+                bluetoothStateReceiver,
+                IntentFilter().apply {
+                    addAction(BluetoothAdapter.ACTION_CONNECTION_STATE_CHANGED)
+                    addAction(BluetoothDevice.ACTION_ACL_CONNECTED)
+                    addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED)
+                }
+            )
+            isBluetoothStateReceiverRegistered = true
+        }
     }
 
     override fun startDiscovery() {
@@ -88,10 +94,13 @@ class AndroidBluetoothController(
             return
         }
 
-        context.registerReceiver(
-            foundDeviceReceiver,
-            IntentFilter(BluetoothDevice.ACTION_FOUND)
-        )
+        if (!isFoundDeviceReceiverRegistered) {
+            context.registerReceiver(
+                foundDeviceReceiver,
+                IntentFilter(BluetoothDevice.ACTION_FOUND)
+            )
+            isFoundDeviceReceiverRegistered = true
+        }
 
         updatePairedDevices()
 
@@ -104,6 +113,10 @@ class AndroidBluetoothController(
         }
 
         bluetoothAdapter?.cancelDiscovery()
+        if (isFoundDeviceReceiverRegistered) {
+            context.unregisterReceiver(foundDeviceReceiver)
+            isFoundDeviceReceiverRegistered = false
+        }
     }
 
     override fun startBluetoothServer(): Flow<ConnectionResult> {
@@ -209,8 +222,23 @@ class AndroidBluetoothController(
     }
 
     override fun release() {
-        context.unregisterReceiver(foundDeviceReceiver)
-        context.unregisterReceiver(bluetoothStateReceiver)
+        try {
+            if (isFoundDeviceReceiverRegistered) {
+                context.unregisterReceiver(foundDeviceReceiver)
+                isFoundDeviceReceiverRegistered = false
+            }
+        } catch (e: IllegalArgumentException) {
+            // Receiver was not registered; ignore
+        }
+
+        try {
+            if (isBluetoothStateReceiverRegistered) {
+                context.unregisterReceiver(bluetoothStateReceiver)
+                isBluetoothStateReceiverRegistered = false
+            }
+        } catch (e: IllegalArgumentException) {
+            // Receiver was not registered; ignore
+        }
         closeConnection()
     }
 
