@@ -55,7 +55,7 @@ fun WelcomePage(
             Button(
                 onClick = onContinueClicked,
                 colors = ButtonDefaults.buttonColors(
-                    backgroundColor = MaterialTheme.colors.primary,
+                    backgroundColor = MaterialTheme.colors.onBackground,
                     contentColor = MaterialTheme.colors.onPrimary
                 ),
                 modifier = Modifier

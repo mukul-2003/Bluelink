@@ -9,7 +9,8 @@ val DarkSecondary = Color(30,30,30) // Yellow accents
 val DarkText = Color(0xFFFFFFFF) // White text
 val stripDark = Color(17,16,16)
 val borderDark = Color.White
-val buttond = Color.Green
+val buttond = Color(230, 3, 3)
+val DarkT = Color(230, 3, 3)
 
 // Light Theme Colors
 val LightBackground = Color(0xFFFFFFFF)
@@ -19,3 +20,4 @@ val LightText = Color(0xFF000000) // Black text
 val stripLight = Color(217,217,217)
 val borderLight = Color.Yellow
 val buttonl = Color(0xFFFFC107)
+val DarkL = Color(0xFFFFC107)

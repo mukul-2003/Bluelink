@@ -238,7 +238,7 @@ fun DeviceScreen(
                         onStartScan()
                     },
                     colors = ButtonDefaults.buttonColors(
-                        backgroundColor = MaterialTheme.colors.primary, // Red color
+                        backgroundColor = MaterialTheme.colors.onBackground, // Red color
                         contentColor = MaterialTheme.colors.onPrimary
                     ),
                     modifier = Modifier
@@ -301,7 +301,7 @@ fun DeviceScreen(
                     Button(
                         onClick = { showDialog.value = false },
                         colors = ButtonDefaults.buttonColors(
-                            backgroundColor = MaterialTheme.colors.primary, // Red color for "Cancel"
+                            backgroundColor = MaterialTheme.colors.onBackground, // Red color for "Cancel"
                             contentColor = MaterialTheme.colors.onPrimary
                         )
                     ) {
@@ -335,7 +335,7 @@ fun DeviceItem(
         // Avatar Icon
         Icon(
             painter = painterResource(id = R.drawable.circle),
-            contentDescription = "Device Icon",
+            contentDescription = "Device Icon for ${device.name}",
             tint = MaterialTheme.colors.primary, // Red color
             modifier = Modifier
                 .size(30.dp)
