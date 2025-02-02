@@ -189,7 +189,7 @@ fun ChatScreen(
                 ) {
                     TextField(
                         value = message.value,
-                        onValueChange = { message                        .value = it.trim() },
+                        onValueChange = { message.value = it },
                         placeholder = {
                             Text(text = "Type Something here...", color = MaterialTheme.colors.onPrimary)
                         },
@@ -216,7 +216,7 @@ fun ChatScreen(
                     IconButton(
                         onClick = {
                             if (message.value.isNotBlank()) {
-                                onSendMessage(message.value)
+                                onSendMessage(message.value.trim())
                                 message.value = ""
                                 keyboardController?.hide()
                             }
