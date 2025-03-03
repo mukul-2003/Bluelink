@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="165f902e-81e3-4af6-837b-b1dec5983f29" name="Changes" comment="contrast issues fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/plcoding/bluelink/presentation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/plcoding/bluelink/presentation/MainActivity.kt" afterDir="false" />
-    </list>
+    <list default="true" id="165f902e-81e3-4af6-837b-b1dec5983f29" name="Changes" comment="depreciated API issue fixed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -266,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738520016368</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="depreciated API issue fixed">
+      <option name="closed" value="true" />
+      <created>1739133439379</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739133439379</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,7 +292,8 @@
     <MESSAGE value="some issues and error fixed" />
     <MESSAGE value="space issue fixed" />
     <MESSAGE value="contrast issues fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="contrast issues fixed" />
+    <MESSAGE value="depreciated API issue fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="depreciated API issue fixed" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
