@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.plcoding.bluelink"
-    android:versionCode="5"
-    android:versionName="1.0" >
+    android:versionCode="6"
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="24"
@@ -16,21 +16,30 @@
         android:name="android.permission.BLUETOOTH_SCAN"
         android:usesPermissionFlags="neverForLocation" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-feature android:name="android.hardware.bluetooth" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <application
         android:name="com.plcoding.bluelink.BluetoothApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:dataExtractionRules="@xml/data_extraction_rules"
         android:extractNativeLibs="false"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.BluetoothChat" >
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.plcoding.bluelink.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <activity
             android:name="com.plcoding.bluelink.presentation.MainActivity"
             android:exported="true"

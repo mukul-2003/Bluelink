@@ -80,6 +80,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+drawable attach_file
 drawable bluetooth
 drawable circle
 drawable ic_launcher_background
@@ -246,3 +247,4 @@ styleable NavInclude graph
 styleable Navigator android_label android_id route
 xml backup_rules
 xml data_extraction_rules
+xml file_paths

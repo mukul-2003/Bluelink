@@ -7,6 +7,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable attach_file
 drawable bluetooth
 drawable circle
 drawable ic_launcher_background
@@ -21,3 +22,4 @@ string app_name
 style Theme.BluetoothChat
 xml backup_rules
 xml data_extraction_rules
+xml file_paths

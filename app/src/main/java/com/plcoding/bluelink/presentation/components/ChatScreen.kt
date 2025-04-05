@@ -119,7 +119,9 @@ fun ChatScreen(
                     Icon(
                         painter = painterResource(id = R.drawable.attach_file),
                         contentDescription = "Attach File",
-                        tint = MaterialTheme.colors.primary
+                        tint = MaterialTheme.colors.primary,
+                        modifier = Modifier.size(26.dp)
+                            .padding(start = 6.dp)
                     )
                 }
                 TextField(
