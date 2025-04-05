@@ -1,7 +1,7 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.plcoding.bluelink"
-4    android:versionCode="6"
+4    android:versionCode="7"
 5    android:versionName="1.1" >
 6
 7    <uses-sdk
@@ -25,129 +25,126 @@
 16-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:7:22-70
 17        android:usesPermissionFlags="neverForLocation" />
 17-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:8:9-55
-18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-18-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:9:5-80
-18-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:9:22-77
-19    <uses-permission
-19-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:10:5-11:38
-20        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-20-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:10:22-78
-21        android:maxSdkVersion="28" />
-21-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:11:9-35
-22    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-22-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:12:5-13:40
-22-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:12:22-79
-23
-24    <application
-24-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:15:5-46:19
-25        android:name="com.plcoding.bluelink.BluetoothApp"
-25-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:16:9-58
-26        android:allowBackup="true"
-26-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:17:9-35
-27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.8.0] C:\Users\mukul\.gradle\caches\transforms-3\57028b1d4a4f081f12ada8045883fdfe\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-28        android:extractNativeLibs="false"
-29        android:icon="@drawable/logo"
-29-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:18:9-38
-30        android:label="@string/app_name"
-30-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:19:9-41
-31        android:supportsRtl="true"
-31-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:20:9-35
-32        android:theme="@style/Theme.BluetoothChat" >
-32-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:21:9-51
-33        <provider
-34            android:name="androidx.core.content.FileProvider"
-34-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:25:13-62
-35            android:authorities="com.plcoding.bluelink.provider"
-35-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:26:13-60
-36            android:exported="false"
-36-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:27:13-37
-37            android:grantUriPermissions="true" >
-37-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:28:13-47
-38            <meta-data
-38-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:29:13-31:54
-39                android:name="android.support.FILE_PROVIDER_PATHS"
-39-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:30:17-67
-40                android:resource="@xml/file_paths" />
-40-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:31:17-51
-41        </provider>
-42
-43        <activity
-43-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:34:9-45:20
-44            android:name="com.plcoding.bluelink.presentation.MainActivity"
-44-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:35:13-75
-45            android:exported="true"
-45-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:36:13-36
-46            android:label="@string/app_name"
-46-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:38:13-45
-47            android:screenOrientation="portrait"
-47-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:40:13-49
-48            android:theme="@style/Theme.BluetoothChat"
-48-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:39:13-55
-49            android:windowSoftInputMode="adjustResize" >
-49-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:37:13-55
-50            <intent-filter>
-50-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:41:13-44:29
-51                <action android:name="android.intent.action.MAIN" />
-51-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:42:17-69
-51-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:42:25-66
-52
-53                <category android:name="android.intent.category.LAUNCHER" />
-53-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:43:17-77
-53-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:43:27-74
-54            </intent-filter>
-55        </activity>
-56
-57        <service
-57-->[androidx.room:room-runtime:2.5.0] C:\Users\mukul\.gradle\caches\transforms-3\8658be0cb3d41be8b69558ef3c096c80\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
-58            android:name="androidx.room.MultiInstanceInvalidationService"
-58-->[androidx.room:room-runtime:2.5.0] C:\Users\mukul\.gradle\caches\transforms-3\8658be0cb3d41be8b69558ef3c096c80\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
-59            android:directBootAware="true"
-59-->[androidx.room:room-runtime:2.5.0] C:\Users\mukul\.gradle\caches\transforms-3\8658be0cb3d41be8b69558ef3c096c80\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
-60            android:exported="false" />
-60-->[androidx.room:room-runtime:2.5.0] C:\Users\mukul\.gradle\caches\transforms-3\8658be0cb3d41be8b69558ef3c096c80\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
-61
-62        <provider
-62-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:25:9-33:20
-63            android:name="androidx.startup.InitializationProvider"
-63-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:26:13-67
-64            android:authorities="com.plcoding.bluelink.androidx-startup"
-64-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:27:13-68
-65            android:exported="false" >
-65-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:28:13-37
-66            <meta-data
-66-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
-67                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-67-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
-68                android:value="androidx.startup" />
-68-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
-69        </provider>
-70
-71        <receiver
-71-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
-72            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-72-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
-73            android:directBootAware="false"
-73-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
-74            android:enabled="true"
-74-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
-75            android:exported="true"
-75-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
-76            android:permission="android.permission.DUMP" >
-76-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
-77            <intent-filter>
-77-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
-78                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-78-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
-78-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
-79            </intent-filter>
-80            <intent-filter>
-80-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
-81                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-81-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
-81-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
-82            </intent-filter>
-83        </receiver>
-84    </application>
-85
-86</manifest>
+18    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+18-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:9:5-76
+18-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:9:22-73
+19    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+19-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:10:5-75
+19-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:10:22-72
+20    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+20-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:11:5-75
+20-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:11:22-72
+21
+22    <application
+22-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:13:5-44:19
+23        android:name="com.plcoding.bluelink.BluetoothApp"
+23-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:14:9-58
+24        android:allowBackup="true"
+24-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:15:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.8.0] C:\Users\mukul\.gradle\caches\transforms-3\57028b1d4a4f081f12ada8045883fdfe\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+26        android:extractNativeLibs="false"
+27        android:icon="@drawable/logo"
+27-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:16:9-38
+28        android:label="@string/app_name"
+28-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:17:9-41
+29        android:supportsRtl="true"
+29-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:18:9-35
+30        android:theme="@style/Theme.BluetoothChat" >
+30-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:19:9-51
+31        <provider
+32            android:name="androidx.core.content.FileProvider"
+32-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:23:13-62
+33            android:authorities="com.plcoding.bluelink.provider"
+33-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:24:13-60
+34            android:exported="false"
+34-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:25:13-37
+35            android:grantUriPermissions="true" >
+35-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:26:13-47
+36            <meta-data
+36-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:27:13-29:54
+37                android:name="android.support.FILE_PROVIDER_PATHS"
+37-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:28:17-67
+38                android:resource="@xml/file_paths" />
+38-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:29:17-51
+39        </provider>
+40
+41        <activity
+41-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:32:9-43:20
+42            android:name="com.plcoding.bluelink.presentation.MainActivity"
+42-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:33:13-75
+43            android:exported="true"
+43-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:34:13-36
+44            android:label="@string/app_name"
+44-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:36:13-45
+45            android:screenOrientation="portrait"
+45-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:38:13-49
+46            android:theme="@style/Theme.BluetoothChat"
+46-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:37:13-55
+47            android:windowSoftInputMode="adjustResize" >
+47-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:35:13-55
+48            <intent-filter>
+48-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:39:13-42:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:40:17-69
+49-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:40:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:41:17-77
+51-->D:\BluetoothChat-master\app\src\main\AndroidManifest.xml:41:27-74
+52            </intent-filter>
+53        </activity>
+54
+55        <service
+55-->[androidx.room:room-runtime:2.5.0] C:\Users\mukul\.gradle\caches\transforms-3\8658be0cb3d41be8b69558ef3c096c80\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+56            android:name="androidx.room.MultiInstanceInvalidationService"
+56-->[androidx.room:room-runtime:2.5.0] C:\Users\mukul\.gradle\caches\transforms-3\8658be0cb3d41be8b69558ef3c096c80\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+57            android:directBootAware="true"
+57-->[androidx.room:room-runtime:2.5.0] C:\Users\mukul\.gradle\caches\transforms-3\8658be0cb3d41be8b69558ef3c096c80\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+58            android:exported="false" />
+58-->[androidx.room:room-runtime:2.5.0] C:\Users\mukul\.gradle\caches\transforms-3\8658be0cb3d41be8b69558ef3c096c80\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+59
+60        <provider
+60-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:25:9-33:20
+61            android:name="androidx.startup.InitializationProvider"
+61-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:26:13-67
+62            android:authorities="com.plcoding.bluelink.androidx-startup"
+62-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:27:13-68
+63            android:exported="false" >
+63-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:28:13-37
+64            <meta-data
+64-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
+65                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+65-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
+66                android:value="androidx.startup" />
+66-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
+67        </provider>
+68
+69        <receiver
+69-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
+70            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+70-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
+71            android:directBootAware="false"
+71-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
+72            android:enabled="true"
+72-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
+73            android:exported="true"
+73-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
+74            android:permission="android.permission.DUMP" >
+74-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
+75            <intent-filter>
+75-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
+76                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+76-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
+76-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
+77            </intent-filter>
+78            <intent-filter>
+78-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
+79                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+79-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
+79-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\mukul\.gradle\caches\transforms-3\8f91eac5a48a2080e9aaec326b338134\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
+80            </intent-filter>
+81        </receiver>
+82    </application>
+83
+84</manifest>
