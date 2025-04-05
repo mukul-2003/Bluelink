@@ -11,7 +11,3 @@ fun String.toBluetoothMessage(isFromLocalUser: Boolean): BluetoothMessage {
         isFromLocalUser = isFromLocalUser
     )
 }
-
-fun BluetoothMessage.toByteArray(): ByteArray {
-    return "$senderName#$message".encodeToByteArray()
-}

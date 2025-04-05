@@ -430,7 +430,7 @@ public final class DaggerBluetoothApp_HiltComponents_SingletonC {
       public T get() {
         switch (id) {
           case 0: // com.plcoding.bluelink.presentation.BluetoothViewModel 
-          return (T) new BluetoothViewModel(singletonCImpl.provideBluetoothControllerProvider.get());
+          return (T) new BluetoothViewModel(singletonCImpl.provideBluetoothControllerProvider.get(), ApplicationContextModule_ProvideApplicationFactory.provideApplication(singletonCImpl.applicationContextModule));
 
           default: throw new AssertionError(id);
         }

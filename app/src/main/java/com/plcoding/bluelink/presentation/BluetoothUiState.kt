@@ -11,5 +11,6 @@ data class BluetoothUiState(
     val connectedDeviceName: String? = null,
     val errorMessage: String? = null,
     val messages: List<BluetoothMessage> = emptyList(),
-    val connectionTimeoutReached: Boolean = false
+    val connectionTimeoutReached: Boolean = false,
+    val fileUploadMessage: String? = null
 )

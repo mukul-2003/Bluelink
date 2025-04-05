@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.plcoding.bluelink.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "com.plcoding.bluelink.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
     },
@@ -24,44 +20,16 @@
         "source": "com.plcoding.bluelink.app-main-58:/drawable/moon.png"
     },
     {
-        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.plcoding.bluelink.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "com.plcoding.bluelink.app-main-58:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.plcoding.bluelink.app-merged_res-56:/xml_backup_rules.xml.flat",
-        "source": "com.plcoding.bluelink.app-main-58:/xml/backup_rules.xml"
     },
     {
         "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "com.plcoding.bluelink.app-main-58:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.plcoding.bluelink.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-anydpi-v33_ic_launcher.xml.flat",
-        "source": "com.plcoding.bluelink.app-main-58:/mipmap-anydpi-v33/ic_launcher.xml"
-    },
-    {
         "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "com.plcoding.bluelink.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.plcoding.bluelink.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.plcoding.bluelink.app-merged_res-56:/drawable_circle.png.flat",
-        "source": "com.plcoding.bluelink.app-main-58:/drawable/circle.png"
-    },
-    {
-        "merged": "com.plcoding.bluelink.app-merged_res-56:/drawable_logo.png.flat",
-        "source": "com.plcoding.bluelink.app-main-58:/drawable/logo.png"
     },
     {
         "merged": "com.plcoding.bluelink.app-merged_res-56:/xml_data_extraction_rules.xml.flat",
@@ -72,8 +40,52 @@
         "source": "com.plcoding.bluelink.app-main-58:/drawable/bluetooth.png"
     },
     {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/xml_backup_rules.xml.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/xml_file_paths.xml.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/drawable_circle.png.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/drawable/circle.png"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/drawable_logo.png.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/drawable/logo.png"
+    },
+    {
         "merged": "com.plcoding.bluelink.app-merged_res-56:/drawable_message.png.flat",
         "source": "com.plcoding.bluelink.app-main-58:/drawable/message.png"
+    },
+    {
+        "merged": "com.plcoding.bluelink.app-merged_res-56:/drawable_attach_file.png.flat",
+        "source": "com.plcoding.bluelink.app-main-58:/drawable/attach_file.png"
     },
     {
         "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -82,10 +94,6 @@
     {
         "merged": "com.plcoding.bluelink.app-merged_res-56:/drawable_ic_launcher_background.xml.flat",
         "source": "com.plcoding.bluelink.app-main-58:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.plcoding.bluelink.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.plcoding.bluelink.app-merged_res-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
