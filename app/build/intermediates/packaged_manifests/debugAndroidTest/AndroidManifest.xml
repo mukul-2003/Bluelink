@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.plcoding.bluetoothchat.test" >
+    package="com.plcoding.bluelink.test" >
 
     <uses-sdk
         android:minSdkVersion="24"
-        android:targetSdkVersion="33" />
+        android:targetSdkVersion="34" />
 
     <instrumentation
         android:name="androidx.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.plcoding.bluetoothchat"
-        android:targetPackage="com.plcoding.bluetoothchat" />
+        android:label="Tests for com.plcoding.bluelink"
+        android:targetPackage="com.plcoding.bluelink" />
 
     <uses-permission android:name="android.permission.REORDER_TASKS" />
 

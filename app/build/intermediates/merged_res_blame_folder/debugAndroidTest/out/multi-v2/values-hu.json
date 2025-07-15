@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.plcoding.bluetoothchat.test.app-mergeDebugAndroidTestResources-30:/values-hu/values-hu.xml",
+            "outputFile": "com.plcoding.bluelink.test.app-mergeDebugAndroidTestResources-30:/values-hu/values-hu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\mukul\\.gradle\\caches\\transforms-3\\57028b1d4a4f081f12ada8045883fdfe\\transformed\\core-1.8.0\\res\\values-hu\\values-hu.xml",
